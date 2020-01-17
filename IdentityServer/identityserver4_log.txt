@@ -1,0 +1,1564 @@
+2020-01-17 15:31:41.043 +08:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2020-01-17 15:31:41.087 +08:00 [DBG] Using Application as default scheme for authentication
+2020-01-17 15:31:41.091 +08:00 [DBG] Using External as default scheme for sign-in
+2020-01-17 15:31:41.091 +08:00 [DBG] Using External as default scheme for sign-out
+2020-01-17 15:31:41.091 +08:00 [DBG] Using Application as default scheme for challenge
+2020-01-17 15:31:41.091 +08:00 [DBG] Using Application as default scheme for forbid
+2020-01-17 15:31:58.521 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2020-01-17 15:31:58.525 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2020-01-17 15:31:58.525 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2020-01-17 15:31:58.530 +08:00 [DBG] Start discovery request
+2020-01-17 15:31:58.593 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2020-01-17 15:31:58.593 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2020-01-17 15:31:58.593 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2020-01-17 15:31:58.597 +08:00 [DBG] Start key discovery request
+2020-01-17 15:32:01.738 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2020-01-17 15:32:01.897 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2020-01-17 15:32:01.897 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2020-01-17 15:32:01.903 +08:00 [DBG] Start token request.
+2020-01-17 15:32:01.911 +08:00 [DBG] Start client validation
+2020-01-17 15:32:01.917 +08:00 [DBG] Start parsing Basic Authentication secret
+2020-01-17 15:32:01.921 +08:00 [DBG] Start parsing for secret in post body
+2020-01-17 15:32:01.937 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2020-01-17 15:32:01.937 +08:00 [DBG] Secret id found: external.microsoft
+2020-01-17 15:32:01.942 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 15:32:01.949 +08:00 [DBG] No matching hashed secret found.
+2020-01-17 15:32:01.949 +08:00 [DBG] Secret validators could not validate secret
+2020-01-17 15:32:01.951 +08:00 [ERR] Client secret validation failed for client: external.microsoft.
+2020-01-17 15:35:41.236 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2020-01-17 15:35:41.238 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2020-01-17 15:35:41.238 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2020-01-17 15:35:41.238 +08:00 [DBG] Start discovery request
+2020-01-17 15:35:41.322 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2020-01-17 15:35:41.322 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2020-01-17 15:35:41.322 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2020-01-17 15:35:41.322 +08:00 [DBG] Start key discovery request
+2020-01-17 15:35:44.638 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2020-01-17 15:35:44.640 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2020-01-17 15:35:44.640 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2020-01-17 15:35:44.640 +08:00 [DBG] Start token request.
+2020-01-17 15:35:44.640 +08:00 [DBG] Start client validation
+2020-01-17 15:35:44.640 +08:00 [DBG] Start parsing Basic Authentication secret
+2020-01-17 15:35:44.640 +08:00 [DBG] Start parsing for secret in post body
+2020-01-17 15:35:44.640 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2020-01-17 15:35:44.641 +08:00 [DBG] Secret id found: external.microsoft
+2020-01-17 15:35:44.641 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 15:35:44.641 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2020-01-17 15:35:44.641 +08:00 [DBG] Client validation success
+2020-01-17 15:35:44.653 +08:00 [DBG] Start token request validation
+2020-01-17 15:35:44.665 +08:00 [DBG] Start validation of authorization code token request
+2020-01-17 15:35:44.669 +08:00 [DBG] authorization_code grant with value: 05c1b3d49442972b82a1fde6bad814d056aea9b7207bbba44a6dd944ff0edd7b not found in store.
+2020-01-17 15:35:44.670 +08:00 [ERR] Invalid authorization code: 05c1b3d49442972b82a1fde6bad814d056aea9b7207bbba44a6dd944ff0edd7b
+2020-01-17 15:35:44.679 +08:00 [ERR] {
+  "ClientId": "external.microsoft",
+  "ClientName": "Microsoft external login client for Code",
+  "GrantType": "authorization_code",
+  "AuthorizationCode": "05c1b3d49442972b82a1fde6bad814d056aea9b7207bbba44a6dd944ff0edd7b",
+  "Raw": {
+    "grant_type": "authorization_code",
+    "code": "05c1b3d49442972b82a1fde6bad814d056aea9b7207bbba44a6dd944ff0edd7b",
+    "redirect_uri": "https://silumart.com",
+    "client_id": "external.microsoft",
+    "client_secret": "***REDACTED***"
+  }
+}
+2020-01-17 15:36:56.296 +08:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2020-01-17 15:36:56.300 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2020-01-17 15:36:56.300 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2020-01-17 15:36:56.312 +08:00 [DBG] Start authorize callback request
+2020-01-17 15:36:56.324 +08:00 [DBG] No user present in authorize request
+2020-01-17 15:36:56.332 +08:00 [DBG] Start authorize request protocol validation
+2020-01-17 15:36:56.339 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 15:36:56.346 +08:00 [DBG] Checking for PKCE parameters
+2020-01-17 15:36:56.347 +08:00 [DBG] No PKCE used.
+2020-01-17 15:36:56.396 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2020-01-17 15:36:56.409 +08:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "external.microsoft",
+  "ClientName": "Microsoft external login client for Code",
+  "RedirectUri": "https://silumart.com",
+  "AllowedRedirectUris": [
+    "https://silumart.com"
+  ],
+  "SubjectId": "anonymous",
+  "ResponseType": "code",
+  "ResponseMode": "query",
+  "GrantType": "authorization_code",
+  "RequestedScopes": "api1",
+  "Raw": {
+    "client_Id": "external.microsoft",
+    "redirect_uri": "https://silumart.com",
+    "response_type": "code",
+    "scope": "api1"
+  }
+}
+2020-01-17 15:36:56.418 +08:00 [INF] Showing login: User is not authenticated
+2020-01-17 15:36:56.538 +08:00 [DBG] Start authorize request protocol validation
+2020-01-17 15:36:56.539 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 15:36:56.539 +08:00 [DBG] Checking for PKCE parameters
+2020-01-17 15:36:56.539 +08:00 [DBG] No PKCE used.
+2020-01-17 15:36:56.539 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2020-01-17 15:36:56.543 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 15:36:56.583 +08:00 [INF] AuthenticationScheme: Microsoft was challenged.
+2020-01-17 15:37:21.887 +08:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2020-01-17 15:37:21.891 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2020-01-17 15:37:21.891 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2020-01-17 15:37:21.891 +08:00 [DBG] Start authorize callback request
+2020-01-17 15:37:21.892 +08:00 [DBG] No user present in authorize request
+2020-01-17 15:37:21.892 +08:00 [DBG] Start authorize request protocol validation
+2020-01-17 15:37:21.892 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 15:37:21.892 +08:00 [DBG] Checking for PKCE parameters
+2020-01-17 15:37:21.892 +08:00 [DBG] No PKCE used.
+2020-01-17 15:37:21.892 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2020-01-17 15:37:21.892 +08:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "external.microsoft",
+  "ClientName": "Microsoft external login client for Code",
+  "RedirectUri": "https://silumart.com",
+  "AllowedRedirectUris": [
+    "https://silumart.com"
+  ],
+  "SubjectId": "anonymous",
+  "ResponseType": "code",
+  "ResponseMode": "query",
+  "GrantType": "authorization_code",
+  "RequestedScopes": "api1",
+  "Raw": {
+    "client_Id": "external.microsoft",
+    "redirect_uri": "https://silumart.com",
+    "response_type": "code",
+    "scope": "api1"
+  }
+}
+2020-01-17 15:37:21.892 +08:00 [INF] Showing login: User is not authenticated
+2020-01-17 15:37:21.909 +08:00 [DBG] Start authorize request protocol validation
+2020-01-17 15:37:21.909 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 15:37:21.909 +08:00 [DBG] Checking for PKCE parameters
+2020-01-17 15:37:21.909 +08:00 [DBG] No PKCE used.
+2020-01-17 15:37:21.909 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2020-01-17 15:37:21.909 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 15:37:21.929 +08:00 [INF] AuthenticationScheme: Microsoft was challenged.
+2020-01-17 15:37:36.608 +08:00 [INF] AuthenticationScheme: idsrv.external signed in.
+2020-01-17 15:37:38.548 +08:00 [DBG] Augmenting SignInContext
+2020-01-17 15:37:38.550 +08:00 [DBG] Adding amr claim with value: external
+2020-01-17 15:37:38.555 +08:00 [INF] AuthenticationScheme: Application signed in.
+2020-01-17 15:37:38.559 +08:00 [INF] AuthenticationScheme: idsrv.external signed out.
+2020-01-17 15:37:38.560 +08:00 [DBG] Start authorize request protocol validation
+2020-01-17 15:37:38.560 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 15:37:38.560 +08:00 [DBG] Checking for PKCE parameters
+2020-01-17 15:37:38.560 +08:00 [DBG] No PKCE used.
+2020-01-17 15:37:38.560 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2020-01-17 15:37:38.561 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 15:37:38.565 +08:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2020-01-17 15:37:38.565 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2020-01-17 15:37:38.565 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2020-01-17 15:37:38.565 +08:00 [DBG] Start authorize callback request
+2020-01-17 15:37:38.565 +08:00 [DBG] User in authorize request: 552739775971328
+2020-01-17 15:37:38.565 +08:00 [DBG] Start authorize request protocol validation
+2020-01-17 15:37:38.565 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 15:37:38.565 +08:00 [DBG] Checking for PKCE parameters
+2020-01-17 15:37:38.565 +08:00 [DBG] No PKCE used.
+2020-01-17 15:37:38.565 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2020-01-17 15:37:38.565 +08:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "external.microsoft",
+  "ClientName": "Microsoft external login client for Code",
+  "RedirectUri": "https://silumart.com",
+  "AllowedRedirectUris": [
+    "https://silumart.com"
+  ],
+  "SubjectId": "552739775971328",
+  "ResponseType": "code",
+  "ResponseMode": "query",
+  "GrantType": "authorization_code",
+  "RequestedScopes": "api1",
+  "SessionId": "73e6186c6c54e3b5029f07891d320356",
+  "Raw": {
+    "client_Id": "external.microsoft",
+    "redirect_uri": "https://silumart.com",
+    "response_type": "code",
+    "scope": "api1"
+  }
+}
+2020-01-17 15:37:55.040 +08:00 [DBG] Client is configured to not require consent, no consent is required
+2020-01-17 15:37:55.044 +08:00 [DBG] Creating Authorization Code Flow response.
+2020-01-17 15:37:55.074 +08:00 [INF] Authorize endpoint response
+{
+  "SubjectId": "552739775971328",
+  "ClientId": "external.microsoft",
+  "RedirectUri": "https://silumart.com",
+  "Scope": "api1"
+}
+2020-01-17 15:37:55.091 +08:00 [DBG] Augmenting SignInContext
+2020-01-17 15:37:55.091 +08:00 [INF] AuthenticationScheme: Application signed in.
+2020-01-17 15:38:42.291 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2020-01-17 15:38:42.291 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2020-01-17 15:38:42.291 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2020-01-17 15:38:42.291 +08:00 [DBG] Start discovery request
+2020-01-17 15:38:42.349 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2020-01-17 15:38:42.349 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2020-01-17 15:38:42.349 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2020-01-17 15:38:42.349 +08:00 [DBG] Start key discovery request
+2020-01-17 15:38:44.085 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2020-01-17 15:38:44.086 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2020-01-17 15:38:44.086 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2020-01-17 15:38:44.086 +08:00 [DBG] Start token request.
+2020-01-17 15:38:44.086 +08:00 [DBG] Start client validation
+2020-01-17 15:38:44.086 +08:00 [DBG] Start parsing Basic Authentication secret
+2020-01-17 15:38:44.086 +08:00 [DBG] Start parsing for secret in post body
+2020-01-17 15:38:44.087 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2020-01-17 15:38:44.087 +08:00 [DBG] Secret id found: external.microsoft
+2020-01-17 15:38:44.087 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 15:38:44.087 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2020-01-17 15:38:44.087 +08:00 [DBG] Client validation success
+2020-01-17 15:38:44.087 +08:00 [DBG] Start token request validation
+2020-01-17 15:38:44.087 +08:00 [DBG] Start validation of authorization code token request
+2020-01-17 15:38:47.755 +08:00 [DBG] Validation of authorization code token request success
+2020-01-17 15:38:47.756 +08:00 [INF] Token request validation success
+{
+  "ClientId": "external.microsoft",
+  "ClientName": "Microsoft external login client for Code",
+  "GrantType": "authorization_code",
+  "AuthorizationCode": "a9900cd541e56224f67f67381a88db629daa0ec4bc88240948bfe796aaf3c04d",
+  "Raw": {
+    "grant_type": "authorization_code",
+    "code": "a9900cd541e56224f67f67381a88db629daa0ec4bc88240948bfe796aaf3c04d",
+    "redirect_uri": "https://silumart.com",
+    "client_id": "external.microsoft",
+    "client_secret": "***REDACTED***"
+  }
+}
+2020-01-17 15:38:47.767 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 15:38:47.776 +08:00 [DBG] Getting claims for access token for client: external.microsoft
+2020-01-17 15:38:47.777 +08:00 [DBG] Getting claims for access token for subject: 552739775971328
+2020-01-17 15:38:51.427 +08:00 [DBG] Token request success.
+2020-01-17 15:39:10.808 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2020-01-17 15:39:10.809 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2020-01-17 15:39:10.809 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2020-01-17 15:39:10.809 +08:00 [DBG] Start discovery request
+2020-01-17 15:39:10.812 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2020-01-17 15:39:10.812 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2020-01-17 15:39:10.812 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2020-01-17 15:39:10.812 +08:00 [DBG] Start key discovery request
+2020-01-17 15:39:12.548 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2020-01-17 15:39:12.549 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2020-01-17 15:39:12.549 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2020-01-17 15:39:12.549 +08:00 [DBG] Start token request.
+2020-01-17 15:39:12.549 +08:00 [DBG] Start client validation
+2020-01-17 15:39:12.549 +08:00 [DBG] Start parsing Basic Authentication secret
+2020-01-17 15:39:12.549 +08:00 [DBG] Start parsing for secret in post body
+2020-01-17 15:39:12.549 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2020-01-17 15:39:12.549 +08:00 [DBG] Secret id found: external.microsoft
+2020-01-17 15:39:12.550 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 15:39:12.550 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2020-01-17 15:39:12.550 +08:00 [DBG] Client validation success
+2020-01-17 15:39:12.550 +08:00 [DBG] Start token request validation
+2020-01-17 15:39:12.550 +08:00 [DBG] Start validation of authorization code token request
+2020-01-17 15:39:12.550 +08:00 [DBG] authorization_code grant with value: a9900cd541e56224f67f67381a88db629daa0ec4bc88240948bfe796aaf3c04d not found in store.
+2020-01-17 15:39:12.550 +08:00 [ERR] Invalid authorization code: a9900cd541e56224f67f67381a88db629daa0ec4bc88240948bfe796aaf3c04d
+2020-01-17 15:39:12.550 +08:00 [ERR] {
+  "ClientId": "external.microsoft",
+  "ClientName": "Microsoft external login client for Code",
+  "GrantType": "authorization_code",
+  "AuthorizationCode": "a9900cd541e56224f67f67381a88db629daa0ec4bc88240948bfe796aaf3c04d",
+  "Raw": {
+    "grant_type": "authorization_code",
+    "code": "a9900cd541e56224f67f67381a88db629daa0ec4bc88240948bfe796aaf3c04d",
+    "redirect_uri": "https://silumart.com",
+    "client_id": "external.microsoft",
+    "client_secret": "***REDACTED***"
+  }
+}
+2020-01-17 15:40:49.513 +08:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2020-01-17 15:40:49.514 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2020-01-17 15:40:49.514 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2020-01-17 15:40:49.514 +08:00 [DBG] Start authorize callback request
+2020-01-17 15:40:49.514 +08:00 [DBG] User in authorize request: 552739775971328
+2020-01-17 15:40:49.514 +08:00 [DBG] Start authorize request protocol validation
+2020-01-17 15:40:49.514 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 15:40:49.514 +08:00 [DBG] Checking for PKCE parameters
+2020-01-17 15:40:49.514 +08:00 [DBG] No PKCE used.
+2020-01-17 15:40:49.514 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2020-01-17 15:40:49.514 +08:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "external.microsoft",
+  "ClientName": "Microsoft external login client for Code",
+  "RedirectUri": "https://silumart.com",
+  "AllowedRedirectUris": [
+    "https://silumart.com"
+  ],
+  "SubjectId": "552739775971328",
+  "ResponseType": "code",
+  "ResponseMode": "query",
+  "GrantType": "authorization_code",
+  "RequestedScopes": "api1",
+  "SessionId": "73e6186c6c54e3b5029f07891d320356",
+  "Raw": {
+    "client_Id": "external.microsoft",
+    "redirect_uri": "https://silumart.com",
+    "response_type": "code",
+    "scope": "api1"
+  }
+}
+2020-01-17 15:40:53.907 +08:00 [DBG] Client is configured to not require consent, no consent is required
+2020-01-17 15:40:53.907 +08:00 [DBG] Creating Authorization Code Flow response.
+2020-01-17 15:40:53.915 +08:00 [INF] Authorize endpoint response
+{
+  "SubjectId": "552739775971328",
+  "ClientId": "external.microsoft",
+  "RedirectUri": "https://silumart.com",
+  "Scope": "api1"
+}
+2020-01-17 15:41:08.722 +08:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2020-01-17 15:41:08.724 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2020-01-17 15:41:08.724 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2020-01-17 15:41:08.724 +08:00 [DBG] Start authorize callback request
+2020-01-17 15:41:08.724 +08:00 [DBG] User in authorize request: 552739775971328
+2020-01-17 15:41:08.724 +08:00 [DBG] Start authorize request protocol validation
+2020-01-17 15:41:08.724 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 15:41:08.724 +08:00 [DBG] Checking for PKCE parameters
+2020-01-17 15:41:08.724 +08:00 [DBG] No PKCE used.
+2020-01-17 15:41:08.725 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2020-01-17 15:41:08.725 +08:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "external.microsoft",
+  "ClientName": "Microsoft external login client for Code",
+  "RedirectUri": "https://silumart.com",
+  "AllowedRedirectUris": [
+    "https://silumart.com"
+  ],
+  "SubjectId": "552739775971328",
+  "ResponseType": "code",
+  "ResponseMode": "query",
+  "GrantType": "authorization_code",
+  "RequestedScopes": "api1",
+  "SessionId": "73e6186c6c54e3b5029f07891d320356",
+  "Raw": {
+    "client_Id": "external.microsoft",
+    "redirect_uri": "https://silumart.com",
+    "response_type": "code",
+    "scope": "api1"
+  }
+}
+2020-01-17 16:25:25.051 +08:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2020-01-17 16:25:25.093 +08:00 [DBG] Using Application as default scheme for authentication
+2020-01-17 16:25:25.097 +08:00 [DBG] Using External as default scheme for sign-in
+2020-01-17 16:25:25.097 +08:00 [DBG] Using External as default scheme for sign-out
+2020-01-17 16:25:25.097 +08:00 [DBG] Using Application as default scheme for challenge
+2020-01-17 16:25:25.098 +08:00 [DBG] Using Application as default scheme for forbid
+2020-01-17 16:25:35.454 +08:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2020-01-17 16:25:35.580 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2020-01-17 16:25:35.581 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2020-01-17 16:25:35.586 +08:00 [DBG] Start authorize callback request
+2020-01-17 16:25:35.597 +08:00 [DBG] User in authorize request: 552739775971328
+2020-01-17 16:25:35.601 +08:00 [DBG] Start authorize request protocol validation
+2020-01-17 16:25:35.610 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 16:25:35.615 +08:00 [DBG] Checking for PKCE parameters
+2020-01-17 16:25:35.616 +08:00 [DBG] No PKCE used.
+2020-01-17 16:25:35.650 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2020-01-17 16:25:35.663 +08:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "external.microsoft",
+  "ClientName": "Microsoft external login client for Code",
+  "RedirectUri": "https://silumart.com",
+  "AllowedRedirectUris": [
+    "https://silumart.com"
+  ],
+  "SubjectId": "552739775971328",
+  "ResponseType": "code",
+  "ResponseMode": "query",
+  "GrantType": "authorization_code",
+  "RequestedScopes": "api1",
+  "SessionId": "73e6186c6c54e3b5029f07891d320356",
+  "Raw": {
+    "client_Id": "external.microsoft",
+    "redirect_uri": "https://silumart.com",
+    "response_type": "code",
+    "scope": "api1"
+  }
+}
+2020-01-17 16:26:17.810 +08:00 [DBG] Client is configured to not require consent, no consent is required
+2020-01-17 16:26:17.815 +08:00 [DBG] Creating Authorization Code Flow response.
+2020-01-17 16:26:17.845 +08:00 [INF] Authorize endpoint response
+{
+  "SubjectId": "552739775971328",
+  "ClientId": "external.microsoft",
+  "RedirectUri": "https://silumart.com",
+  "Scope": "api1"
+}
+2020-01-17 16:27:04.233 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2020-01-17 16:27:04.236 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2020-01-17 16:27:04.236 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2020-01-17 16:27:04.240 +08:00 [DBG] Start discovery request
+2020-01-17 16:27:04.321 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2020-01-17 16:27:04.323 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2020-01-17 16:27:04.323 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2020-01-17 16:27:04.326 +08:00 [DBG] Start key discovery request
+2020-01-17 16:27:07.366 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2020-01-17 16:27:07.371 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2020-01-17 16:27:07.371 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2020-01-17 16:27:07.380 +08:00 [DBG] Start token request.
+2020-01-17 16:27:07.388 +08:00 [DBG] Start client validation
+2020-01-17 16:27:07.395 +08:00 [DBG] Start parsing Basic Authentication secret
+2020-01-17 16:27:07.400 +08:00 [DBG] Start parsing for secret in post body
+2020-01-17 16:27:07.415 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2020-01-17 16:27:07.415 +08:00 [DBG] Secret id found: external.microsoft
+2020-01-17 16:27:07.415 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 16:27:07.424 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2020-01-17 16:27:07.424 +08:00 [DBG] Client validation success
+2020-01-17 16:27:07.429 +08:00 [DBG] Start token request validation
+2020-01-17 16:27:07.438 +08:00 [DBG] Start validation of authorization code token request
+2020-01-17 16:27:22.357 +08:00 [DBG] Validation of authorization code token request success
+2020-01-17 16:27:22.361 +08:00 [INF] Token request validation success
+{
+  "ClientId": "external.microsoft",
+  "ClientName": "Microsoft external login client for Code",
+  "GrantType": "authorization_code",
+  "AuthorizationCode": "f26771edcc7a280bef1fe4a14f0c3522f7ac57160fcbd63465e04f0609070179",
+  "Raw": {
+    "grant_type": "authorization_code",
+    "code": "f26771edcc7a280bef1fe4a14f0c3522f7ac57160fcbd63465e04f0609070179",
+    "redirect_uri": "https://silumart.com",
+    "client_id": "external.microsoft",
+    "client_secret": "***REDACTED***"
+  }
+}
+2020-01-17 16:27:22.371 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 16:27:22.382 +08:00 [DBG] Getting claims for access token for client: external.microsoft
+2020-01-17 16:27:22.382 +08:00 [DBG] Getting claims for access token for subject: 552739775971328
+2020-01-17 16:27:30.020 +08:00 [DBG] Token request success.
+2020-01-17 16:28:05.688 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2020-01-17 16:28:05.693 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2020-01-17 16:28:05.693 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2020-01-17 16:28:05.694 +08:00 [DBG] Start discovery request
+2020-01-17 16:28:05.772 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2020-01-17 16:28:05.773 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2020-01-17 16:28:05.773 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2020-01-17 16:28:05.773 +08:00 [DBG] Start key discovery request
+2020-01-17 16:40:03.672 +08:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2020-01-17 16:40:03.713 +08:00 [DBG] Using Application as default scheme for authentication
+2020-01-17 16:40:03.718 +08:00 [DBG] Using External as default scheme for sign-in
+2020-01-17 16:40:03.718 +08:00 [DBG] Using External as default scheme for sign-out
+2020-01-17 16:40:03.718 +08:00 [DBG] Using Application as default scheme for challenge
+2020-01-17 16:40:03.718 +08:00 [DBG] Using Application as default scheme for forbid
+2020-01-17 16:40:06.950 +08:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2020-01-17 16:40:07.011 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2020-01-17 16:40:07.011 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2020-01-17 16:40:07.016 +08:00 [DBG] Start authorize callback request
+2020-01-17 16:40:07.028 +08:00 [DBG] User in authorize request: 552739775971328
+2020-01-17 16:40:07.032 +08:00 [DBG] Start authorize request protocol validation
+2020-01-17 16:40:07.042 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 16:40:07.046 +08:00 [DBG] Checking for PKCE parameters
+2020-01-17 16:40:07.047 +08:00 [DBG] No PKCE used.
+2020-01-17 16:40:07.090 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2020-01-17 16:40:07.104 +08:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "external.microsoft",
+  "ClientName": "Microsoft external login client for Code",
+  "RedirectUri": "https://silumart.com",
+  "AllowedRedirectUris": [
+    "https://silumart.com"
+  ],
+  "SubjectId": "552739775971328",
+  "ResponseType": "code",
+  "ResponseMode": "query",
+  "GrantType": "authorization_code",
+  "RequestedScopes": "api1",
+  "SessionId": "73e6186c6c54e3b5029f07891d320356",
+  "Raw": {
+    "client_Id": "external.microsoft",
+    "redirect_uri": "https://silumart.com",
+    "response_type": "code",
+    "scope": "api1"
+  }
+}
+2020-01-17 16:42:35.993 +08:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2020-01-17 16:42:36.062 +08:00 [DBG] Using Application as default scheme for authentication
+2020-01-17 16:42:36.065 +08:00 [DBG] Using External as default scheme for sign-in
+2020-01-17 16:42:36.065 +08:00 [DBG] Using External as default scheme for sign-out
+2020-01-17 16:42:36.065 +08:00 [DBG] Using Application as default scheme for challenge
+2020-01-17 16:42:36.065 +08:00 [DBG] Using Application as default scheme for forbid
+2020-01-17 16:42:38.008 +08:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2020-01-17 16:42:38.078 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2020-01-17 16:42:38.079 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2020-01-17 16:42:38.086 +08:00 [DBG] Start authorize callback request
+2020-01-17 16:42:38.109 +08:00 [DBG] User in authorize request: 552739775971328
+2020-01-17 16:42:38.116 +08:00 [DBG] Start authorize request protocol validation
+2020-01-17 16:42:38.133 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 16:42:38.140 +08:00 [DBG] Checking for PKCE parameters
+2020-01-17 16:42:38.142 +08:00 [DBG] No PKCE used.
+2020-01-17 16:42:38.194 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2020-01-17 16:42:38.208 +08:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "external.microsoft",
+  "ClientName": "Microsoft external login client for Code",
+  "RedirectUri": "https://silumart.com",
+  "AllowedRedirectUris": [
+    "https://silumart.com"
+  ],
+  "SubjectId": "552739775971328",
+  "ResponseType": "code",
+  "ResponseMode": "query",
+  "GrantType": "authorization_code",
+  "RequestedScopes": "api1",
+  "SessionId": "73e6186c6c54e3b5029f07891d320356",
+  "Raw": {
+    "client_Id": "external.microsoft",
+    "redirect_uri": "https://silumart.com",
+    "response_type": "code",
+    "scope": "api1"
+  }
+}
+2020-01-17 16:45:09.011 +08:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2020-01-17 16:45:09.063 +08:00 [DBG] Using Application as default scheme for authentication
+2020-01-17 16:45:09.068 +08:00 [DBG] Using External as default scheme for sign-in
+2020-01-17 16:45:09.068 +08:00 [DBG] Using External as default scheme for sign-out
+2020-01-17 16:45:09.068 +08:00 [DBG] Using Application as default scheme for challenge
+2020-01-17 16:45:09.068 +08:00 [DBG] Using Application as default scheme for forbid
+2020-01-17 16:45:13.467 +08:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2020-01-17 16:45:13.529 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2020-01-17 16:45:13.529 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2020-01-17 16:45:13.534 +08:00 [DBG] Start authorize callback request
+2020-01-17 16:45:13.546 +08:00 [DBG] User in authorize request: 552739775971328
+2020-01-17 16:45:13.550 +08:00 [DBG] Start authorize request protocol validation
+2020-01-17 16:45:13.560 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 16:45:13.565 +08:00 [DBG] Checking for PKCE parameters
+2020-01-17 16:45:13.566 +08:00 [DBG] No PKCE used.
+2020-01-17 16:45:13.603 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2020-01-17 16:45:13.618 +08:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "external.microsoft",
+  "ClientName": "Microsoft external login client for Code",
+  "RedirectUri": "https://silumart.com",
+  "AllowedRedirectUris": [
+    "https://silumart.com"
+  ],
+  "SubjectId": "552739775971328",
+  "ResponseType": "code",
+  "ResponseMode": "query",
+  "GrantType": "authorization_code",
+  "RequestedScopes": "api1",
+  "SessionId": "73e6186c6c54e3b5029f07891d320356",
+  "Raw": {
+    "client_Id": "external.microsoft",
+    "redirect_uri": "https://silumart.com",
+    "response_type": "code",
+    "scope": "api1"
+  }
+}
+2020-01-17 16:45:27.279 +08:00 [DBG] Client is configured to not require consent, no consent is required
+2020-01-17 16:45:27.284 +08:00 [DBG] Creating Authorization Code Flow response.
+2020-01-17 16:45:27.315 +08:00 [INF] Authorize endpoint response
+{
+  "SubjectId": "552739775971328",
+  "ClientId": "external.microsoft",
+  "RedirectUri": "https://silumart.com",
+  "Scope": "api1"
+}
+2020-01-17 16:45:28.740 +08:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2020-01-17 16:45:28.740 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2020-01-17 16:45:28.740 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2020-01-17 16:45:28.740 +08:00 [DBG] Start authorize callback request
+2020-01-17 16:45:28.741 +08:00 [DBG] User in authorize request: 552739775971328
+2020-01-17 16:45:28.741 +08:00 [DBG] Start authorize request protocol validation
+2020-01-17 16:45:28.741 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 16:45:28.741 +08:00 [DBG] Checking for PKCE parameters
+2020-01-17 16:45:28.741 +08:00 [DBG] No PKCE used.
+2020-01-17 16:45:28.741 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2020-01-17 16:45:28.741 +08:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "external.microsoft",
+  "ClientName": "Microsoft external login client for Code",
+  "RedirectUri": "https://silumart.com",
+  "AllowedRedirectUris": [
+    "https://silumart.com"
+  ],
+  "SubjectId": "552739775971328",
+  "ResponseType": "code",
+  "ResponseMode": "query",
+  "GrantType": "authorization_code",
+  "RequestedScopes": "api1",
+  "SessionId": "73e6186c6c54e3b5029f07891d320356",
+  "Raw": {
+    "client_Id": "external.microsoft",
+    "redirect_uri": "https://silumart.com",
+    "response_type": "code",
+    "scope": "api1"
+  }
+}
+2020-01-17 16:45:32.713 +08:00 [DBG] Client is configured to not require consent, no consent is required
+2020-01-17 16:45:32.713 +08:00 [DBG] Creating Authorization Code Flow response.
+2020-01-17 16:45:32.719 +08:00 [INF] Authorize endpoint response
+{
+  "SubjectId": "552739775971328",
+  "ClientId": "external.microsoft",
+  "RedirectUri": "https://silumart.com",
+  "Scope": "api1"
+}
+2020-01-17 16:59:54.331 +08:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2020-01-17 16:59:54.365 +08:00 [DBG] Using Application as default scheme for authentication
+2020-01-17 16:59:54.368 +08:00 [DBG] Using External as default scheme for sign-in
+2020-01-17 16:59:54.368 +08:00 [DBG] Using External as default scheme for sign-out
+2020-01-17 16:59:54.368 +08:00 [DBG] Using Application as default scheme for challenge
+2020-01-17 16:59:54.368 +08:00 [DBG] Using Application as default scheme for forbid
+2020-01-17 17:00:00.044 +08:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2020-01-17 17:00:00.167 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2020-01-17 17:00:00.168 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2020-01-17 17:00:00.172 +08:00 [DBG] Start authorize callback request
+2020-01-17 17:00:00.184 +08:00 [DBG] User in authorize request: 552739775971328
+2020-01-17 17:00:00.188 +08:00 [DBG] Start authorize request protocol validation
+2020-01-17 17:00:00.199 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 17:00:00.203 +08:00 [DBG] Checking for PKCE parameters
+2020-01-17 17:00:00.204 +08:00 [DBG] No PKCE used.
+2020-01-17 17:00:00.238 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2020-01-17 17:00:00.254 +08:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "external.microsoft",
+  "ClientName": "Microsoft external login client for Code",
+  "RedirectUri": "https://silumart.com",
+  "AllowedRedirectUris": [
+    "https://silumart.com"
+  ],
+  "SubjectId": "552739775971328",
+  "ResponseType": "code",
+  "ResponseMode": "query",
+  "GrantType": "authorization_code",
+  "RequestedScopes": "api1",
+  "SessionId": "73e6186c6c54e3b5029f07891d320356",
+  "Raw": {
+    "client_Id": "external.microsoft",
+    "redirect_uri": "https://silumart.com",
+    "response_type": "code",
+    "scope": "api1"
+  }
+}
+2020-01-17 17:00:05.938 +08:00 [DBG] Client is configured to not require consent, no consent is required
+2020-01-17 17:00:05.944 +08:00 [DBG] Creating Authorization Code Flow response.
+2020-01-17 17:00:05.974 +08:00 [INF] Authorize endpoint response
+{
+  "SubjectId": "552739775971328",
+  "ClientId": "external.microsoft",
+  "RedirectUri": "https://silumart.com",
+  "Scope": "api1"
+}
+2020-01-17 17:00:20.195 +08:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2020-01-17 17:00:20.197 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2020-01-17 17:00:20.197 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2020-01-17 17:00:20.197 +08:00 [DBG] Start authorize callback request
+2020-01-17 17:00:20.198 +08:00 [DBG] User in authorize request: 552739775971328
+2020-01-17 17:00:20.198 +08:00 [DBG] Start authorize request protocol validation
+2020-01-17 17:00:20.198 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 17:00:20.199 +08:00 [DBG] Checking for PKCE parameters
+2020-01-17 17:00:20.199 +08:00 [DBG] No PKCE used.
+2020-01-17 17:00:20.199 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2020-01-17 17:00:20.199 +08:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "external.microsoft",
+  "ClientName": "Microsoft external login client for Code",
+  "RedirectUri": "https://silumart.com",
+  "AllowedRedirectUris": [
+    "https://silumart.com"
+  ],
+  "SubjectId": "552739775971328",
+  "ResponseType": "code",
+  "ResponseMode": "query",
+  "GrantType": "authorization_code",
+  "RequestedScopes": "api1",
+  "SessionId": "73e6186c6c54e3b5029f07891d320356",
+  "Raw": {
+    "client_Id": "external.microsoft",
+    "redirect_uri": "https://silumart.com",
+    "response_type": "code",
+    "scope": "api1"
+  }
+}
+2020-01-17 17:05:44.607 +08:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2020-01-17 17:05:44.688 +08:00 [DBG] Using Application as default scheme for authentication
+2020-01-17 17:05:44.697 +08:00 [DBG] Using External as default scheme for sign-in
+2020-01-17 17:05:44.697 +08:00 [DBG] Using External as default scheme for sign-out
+2020-01-17 17:05:44.698 +08:00 [DBG] Using Application as default scheme for challenge
+2020-01-17 17:05:44.698 +08:00 [DBG] Using Application as default scheme for forbid
+2020-01-17 17:05:49.598 +08:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2020-01-17 17:05:49.719 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2020-01-17 17:05:49.720 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2020-01-17 17:05:49.726 +08:00 [DBG] Start authorize callback request
+2020-01-17 17:05:49.737 +08:00 [DBG] No user present in authorize request
+2020-01-17 17:05:49.741 +08:00 [DBG] Start authorize request protocol validation
+2020-01-17 17:05:49.752 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 17:05:49.758 +08:00 [DBG] Checking for PKCE parameters
+2020-01-17 17:05:49.759 +08:00 [DBG] No PKCE used.
+2020-01-17 17:05:49.793 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2020-01-17 17:05:49.809 +08:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "external.microsoft",
+  "ClientName": "Microsoft external login client for Code",
+  "RedirectUri": "https://silumart.com",
+  "AllowedRedirectUris": [
+    "https://silumart.com"
+  ],
+  "SubjectId": "anonymous",
+  "ResponseType": "code",
+  "ResponseMode": "query",
+  "GrantType": "authorization_code",
+  "RequestedScopes": "api1",
+  "Raw": {
+    "client_Id": "external.microsoft",
+    "redirect_uri": "https://silumart.com",
+    "response_type": "code",
+    "scope": "api1"
+  }
+}
+2020-01-17 17:05:49.816 +08:00 [INF] Showing login: User is not authenticated
+2020-01-17 17:05:49.878 +08:00 [DBG] Start authorize request protocol validation
+2020-01-17 17:05:49.878 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 17:05:49.878 +08:00 [DBG] Checking for PKCE parameters
+2020-01-17 17:05:49.878 +08:00 [DBG] No PKCE used.
+2020-01-17 17:05:49.879 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2020-01-17 17:05:49.881 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 17:05:49.910 +08:00 [INF] AuthenticationScheme: Microsoft was challenged.
+2020-01-17 17:06:06.196 +08:00 [INF] AuthenticationScheme: idsrv.external signed in.
+2020-01-17 17:10:08.487 +08:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2020-01-17 17:10:08.522 +08:00 [DBG] Using Application as default scheme for authentication
+2020-01-17 17:10:08.524 +08:00 [DBG] Using External as default scheme for sign-in
+2020-01-17 17:10:08.524 +08:00 [DBG] Using External as default scheme for sign-out
+2020-01-17 17:10:08.525 +08:00 [DBG] Using Application as default scheme for challenge
+2020-01-17 17:10:08.525 +08:00 [DBG] Using Application as default scheme for forbid
+2020-01-17 17:10:19.009 +08:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2020-01-17 17:10:19.076 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2020-01-17 17:10:19.076 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2020-01-17 17:10:19.083 +08:00 [DBG] Start authorize callback request
+2020-01-17 17:10:19.098 +08:00 [DBG] User in authorize request: 552739775971328
+2020-01-17 17:10:19.102 +08:00 [DBG] Start authorize request protocol validation
+2020-01-17 17:10:19.113 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 17:10:19.118 +08:00 [DBG] Checking for PKCE parameters
+2020-01-17 17:10:19.119 +08:00 [DBG] No PKCE used.
+2020-01-17 17:10:19.154 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2020-01-17 17:10:19.168 +08:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "external.microsoft",
+  "ClientName": "Microsoft external login client for Code",
+  "RedirectUri": "https://silumart.com",
+  "AllowedRedirectUris": [
+    "https://silumart.com"
+  ],
+  "SubjectId": "552739775971328",
+  "ResponseType": "code",
+  "ResponseMode": "query",
+  "GrantType": "authorization_code",
+  "RequestedScopes": "api1",
+  "SessionId": "73e6186c6c54e3b5029f07891d320356",
+  "Raw": {
+    "client_Id": "external.microsoft",
+    "redirect_uri": "https://silumart.com",
+    "response_type": "code",
+    "scope": "api1"
+  }
+}
+2020-01-17 17:10:38.514 +08:00 [DBG] Client is configured to not require consent, no consent is required
+2020-01-17 17:10:38.519 +08:00 [DBG] Creating Authorization Code Flow response.
+2020-01-17 17:10:38.551 +08:00 [INF] Authorize endpoint response
+{
+  "SubjectId": "552739775971328",
+  "ClientId": "external.microsoft",
+  "RedirectUri": "https://silumart.com",
+  "Scope": "api1"
+}
+2020-01-17 17:10:45.059 +08:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2020-01-17 17:10:45.064 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2020-01-17 17:10:45.064 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2020-01-17 17:10:45.065 +08:00 [DBG] Start authorize callback request
+2020-01-17 17:10:45.066 +08:00 [DBG] No user present in authorize request
+2020-01-17 17:10:45.066 +08:00 [DBG] Start authorize request protocol validation
+2020-01-17 17:10:45.067 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 17:10:45.067 +08:00 [DBG] Checking for PKCE parameters
+2020-01-17 17:10:45.067 +08:00 [DBG] No PKCE used.
+2020-01-17 17:10:45.067 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2020-01-17 17:10:45.067 +08:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "external.microsoft",
+  "ClientName": "Microsoft external login client for Code",
+  "RedirectUri": "https://silumart.com",
+  "AllowedRedirectUris": [
+    "https://silumart.com"
+  ],
+  "SubjectId": "anonymous",
+  "ResponseType": "code",
+  "ResponseMode": "query",
+  "GrantType": "authorization_code",
+  "RequestedScopes": "api1",
+  "Raw": {
+    "client_Id": "external.microsoft",
+    "redirect_uri": "https://silumart.com",
+    "response_type": "code",
+    "scope": "api1"
+  }
+}
+2020-01-17 17:10:45.067 +08:00 [INF] Showing login: User is not authenticated
+2020-01-17 17:10:45.191 +08:00 [DBG] Start authorize request protocol validation
+2020-01-17 17:10:45.192 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 17:10:45.192 +08:00 [DBG] Checking for PKCE parameters
+2020-01-17 17:10:45.192 +08:00 [DBG] No PKCE used.
+2020-01-17 17:10:45.192 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2020-01-17 17:10:45.194 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 17:10:45.223 +08:00 [INF] AuthenticationScheme: Microsoft was challenged.
+2020-01-17 17:10:54.841 +08:00 [INF] AuthenticationScheme: idsrv.external signed in.
+2020-01-17 17:11:18.511 +08:00 [DBG] Augmenting SignInContext
+2020-01-17 17:11:18.513 +08:00 [DBG] Adding amr claim with value: external
+2020-01-17 17:11:18.515 +08:00 [INF] AuthenticationScheme: Application signed in.
+2020-01-17 17:11:18.995 +08:00 [INF] AuthenticationScheme: idsrv.external signed out.
+2020-01-17 17:11:20.761 +08:00 [DBG] Start authorize request protocol validation
+2020-01-17 17:11:20.765 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 17:11:20.765 +08:00 [DBG] Checking for PKCE parameters
+2020-01-17 17:11:20.765 +08:00 [DBG] No PKCE used.
+2020-01-17 17:11:20.765 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2020-01-17 17:11:20.766 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 17:11:20.776 +08:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2020-01-17 17:11:20.777 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2020-01-17 17:11:20.777 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2020-01-17 17:11:20.777 +08:00 [DBG] Start authorize callback request
+2020-01-17 17:11:20.777 +08:00 [DBG] User in authorize request: 552833829044224
+2020-01-17 17:11:20.777 +08:00 [DBG] Start authorize request protocol validation
+2020-01-17 17:11:20.777 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 17:11:20.777 +08:00 [DBG] Checking for PKCE parameters
+2020-01-17 17:11:20.777 +08:00 [DBG] No PKCE used.
+2020-01-17 17:11:20.777 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2020-01-17 17:11:20.778 +08:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "external.microsoft",
+  "ClientName": "Microsoft external login client for Code",
+  "RedirectUri": "https://silumart.com",
+  "AllowedRedirectUris": [
+    "https://silumart.com"
+  ],
+  "SubjectId": "552833829044224",
+  "ResponseType": "code",
+  "ResponseMode": "query",
+  "GrantType": "authorization_code",
+  "RequestedScopes": "api1",
+  "SessionId": "193ff895ecb7f8800aac60dfdb70390e",
+  "Raw": {
+    "client_Id": "external.microsoft",
+    "redirect_uri": "https://silumart.com",
+    "response_type": "code",
+    "scope": "api1"
+  }
+}
+2020-01-17 17:11:44.058 +08:00 [DBG] Client is configured to not require consent, no consent is required
+2020-01-17 17:11:44.058 +08:00 [DBG] Creating Authorization Code Flow response.
+2020-01-17 17:11:44.067 +08:00 [INF] Authorize endpoint response
+{
+  "SubjectId": "552833829044224",
+  "ClientId": "external.microsoft",
+  "RedirectUri": "https://silumart.com",
+  "Scope": "api1"
+}
+2020-01-17 17:11:44.072 +08:00 [DBG] Augmenting SignInContext
+2020-01-17 17:11:44.072 +08:00 [INF] AuthenticationScheme: Application signed in.
+2020-01-17 17:12:37.463 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2020-01-17 17:12:37.466 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2020-01-17 17:12:37.466 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2020-01-17 17:12:37.471 +08:00 [DBG] Start discovery request
+2020-01-17 17:12:37.559 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2020-01-17 17:12:37.560 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2020-01-17 17:12:37.560 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2020-01-17 17:12:37.564 +08:00 [DBG] Start key discovery request
+2020-01-17 17:12:40.356 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2020-01-17 17:12:40.362 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2020-01-17 17:12:40.362 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2020-01-17 17:12:40.370 +08:00 [DBG] Start token request.
+2020-01-17 17:12:40.377 +08:00 [DBG] Start client validation
+2020-01-17 17:12:40.382 +08:00 [DBG] Start parsing Basic Authentication secret
+2020-01-17 17:12:40.386 +08:00 [DBG] Start parsing for secret in post body
+2020-01-17 17:12:40.403 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2020-01-17 17:12:40.403 +08:00 [DBG] Secret id found: external.microsoft
+2020-01-17 17:12:40.403 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 17:12:40.413 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2020-01-17 17:12:40.413 +08:00 [DBG] Client validation success
+2020-01-17 17:12:40.417 +08:00 [DBG] Start token request validation
+2020-01-17 17:12:40.430 +08:00 [DBG] Start validation of authorization code token request
+2020-01-17 17:12:46.594 +08:00 [DBG] Validation of authorization code token request success
+2020-01-17 17:12:46.599 +08:00 [INF] Token request validation success
+{
+  "ClientId": "external.microsoft",
+  "ClientName": "Microsoft external login client for Code",
+  "GrantType": "authorization_code",
+  "AuthorizationCode": "ae1842c2a455c459b4f4593b14cb6cc360beaa0c0158a8ddb29ce1deb8e5701c",
+  "Raw": {
+    "grant_type": "authorization_code",
+    "code": "ae1842c2a455c459b4f4593b14cb6cc360beaa0c0158a8ddb29ce1deb8e5701c",
+    "redirect_uri": "https://silumart.com",
+    "client_id": "external.microsoft",
+    "client_secret": "***REDACTED***"
+  }
+}
+2020-01-17 17:12:46.611 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 17:12:46.623 +08:00 [DBG] Getting claims for access token for client: external.microsoft
+2020-01-17 17:12:46.624 +08:00 [DBG] Getting claims for access token for subject: 552833829044224
+2020-01-17 17:13:05.425 +08:00 [DBG] Token request success.
+2020-01-17 17:13:22.370 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2020-01-17 17:13:22.370 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2020-01-17 17:13:22.370 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2020-01-17 17:13:22.370 +08:00 [DBG] Start discovery request
+2020-01-17 17:13:22.424 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2020-01-17 17:13:22.424 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2020-01-17 17:13:22.424 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2020-01-17 17:13:22.424 +08:00 [DBG] Start key discovery request
+2020-01-17 17:15:05.057 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2020-01-17 17:15:05.058 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2020-01-17 17:15:05.058 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2020-01-17 17:15:05.058 +08:00 [DBG] Start discovery request
+2020-01-17 17:15:05.160 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2020-01-17 17:15:05.161 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2020-01-17 17:15:05.161 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2020-01-17 17:15:05.161 +08:00 [DBG] Start key discovery request
+2020-01-17 17:18:17.480 +08:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2020-01-17 17:18:17.513 +08:00 [DBG] Using Application as default scheme for authentication
+2020-01-17 17:18:17.515 +08:00 [DBG] Using External as default scheme for sign-in
+2020-01-17 17:18:17.515 +08:00 [DBG] Using External as default scheme for sign-out
+2020-01-17 17:18:17.515 +08:00 [DBG] Using Application as default scheme for challenge
+2020-01-17 17:18:17.515 +08:00 [DBG] Using Application as default scheme for forbid
+2020-01-17 17:18:24.522 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2020-01-17 17:18:24.529 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2020-01-17 17:18:24.529 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2020-01-17 17:18:24.532 +08:00 [DBG] Start discovery request
+2020-01-17 17:18:24.766 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2020-01-17 17:18:24.766 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2020-01-17 17:18:24.766 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2020-01-17 17:18:24.769 +08:00 [DBG] Start key discovery request
+2020-01-17 17:21:17.984 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2020-01-17 17:21:17.988 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2020-01-17 17:21:17.988 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2020-01-17 17:21:17.988 +08:00 [DBG] Start discovery request
+2020-01-17 17:21:18.018 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2020-01-17 17:21:18.018 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2020-01-17 17:21:18.018 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2020-01-17 17:21:18.018 +08:00 [DBG] Start key discovery request
+2020-01-17 17:21:18.040 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2020-01-17 17:21:18.099 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2020-01-17 17:21:18.100 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2020-01-17 17:21:18.106 +08:00 [DBG] Start token request.
+2020-01-17 17:21:18.112 +08:00 [DBG] Start client validation
+2020-01-17 17:21:18.116 +08:00 [DBG] Start parsing Basic Authentication secret
+2020-01-17 17:21:18.120 +08:00 [DBG] Start parsing for secret in post body
+2020-01-17 17:21:18.130 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2020-01-17 17:21:18.131 +08:00 [DBG] Secret id found: external.microsoft
+2020-01-17 17:21:18.137 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 17:21:18.145 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2020-01-17 17:21:18.145 +08:00 [DBG] Client validation success
+2020-01-17 17:21:18.153 +08:00 [DBG] Start token request validation
+2020-01-17 17:21:18.163 +08:00 [DBG] Start validation of authorization code token request
+2020-01-17 17:21:18.166 +08:00 [DBG] authorization_code grant with value: ae1842c2a455c459b4f4593b14cb6cc360beaa0c0158a8ddb29ce1deb8e5701c not found in store.
+2020-01-17 17:21:18.167 +08:00 [ERR] Invalid authorization code: ae1842c2a455c459b4f4593b14cb6cc360beaa0c0158a8ddb29ce1deb8e5701c
+2020-01-17 17:21:18.172 +08:00 [ERR] {
+  "ClientId": "external.microsoft",
+  "ClientName": "Microsoft external login client for Code",
+  "GrantType": "authorization_code",
+  "AuthorizationCode": "ae1842c2a455c459b4f4593b14cb6cc360beaa0c0158a8ddb29ce1deb8e5701c",
+  "Raw": {
+    "grant_type": "authorization_code",
+    "code": "ae1842c2a455c459b4f4593b14cb6cc360beaa0c0158a8ddb29ce1deb8e5701c",
+    "redirect_uri": "https://silumart.com",
+    "client_id": "external.microsoft",
+    "client_secret": "***REDACTED***"
+  }
+}
+2020-01-17 17:21:34.796 +08:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2020-01-17 17:21:34.803 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2020-01-17 17:21:34.803 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2020-01-17 17:21:34.809 +08:00 [DBG] Start authorize callback request
+2020-01-17 17:21:34.821 +08:00 [DBG] User in authorize request: 552833829044224
+2020-01-17 17:21:34.825 +08:00 [DBG] Start authorize request protocol validation
+2020-01-17 17:21:34.831 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 17:21:34.835 +08:00 [DBG] Checking for PKCE parameters
+2020-01-17 17:21:34.837 +08:00 [DBG] No PKCE used.
+2020-01-17 17:21:34.869 +08:00 [DBG] Calling into custom validator: EasyOffer.FrontEnd.Authentication.IdentityServer.AuthorizeRequestValidator
+2020-01-17 17:22:19.552 +08:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2020-01-17 17:22:19.593 +08:00 [DBG] Using Application as default scheme for authentication
+2020-01-17 17:22:19.597 +08:00 [DBG] Using External as default scheme for sign-in
+2020-01-17 17:22:19.597 +08:00 [DBG] Using External as default scheme for sign-out
+2020-01-17 17:22:19.597 +08:00 [DBG] Using Application as default scheme for challenge
+2020-01-17 17:22:19.597 +08:00 [DBG] Using Application as default scheme for forbid
+2020-01-17 17:22:21.786 +08:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2020-01-17 17:22:21.861 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2020-01-17 17:22:21.862 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2020-01-17 17:22:21.867 +08:00 [DBG] Start authorize callback request
+2020-01-17 17:22:21.880 +08:00 [DBG] User in authorize request: 552739775971328
+2020-01-17 17:22:21.885 +08:00 [DBG] Start authorize request protocol validation
+2020-01-17 17:22:21.895 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 17:22:21.899 +08:00 [DBG] Checking for PKCE parameters
+2020-01-17 17:22:21.900 +08:00 [DBG] No PKCE used.
+2020-01-17 17:22:21.941 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2020-01-17 17:22:21.956 +08:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "external.microsoft",
+  "ClientName": "Microsoft external login client for Code",
+  "RedirectUri": "https://silumart.com",
+  "AllowedRedirectUris": [
+    "https://silumart.com"
+  ],
+  "SubjectId": "552739775971328",
+  "ResponseType": "code",
+  "ResponseMode": "query",
+  "GrantType": "authorization_code",
+  "RequestedScopes": "api1",
+  "SessionId": "73e6186c6c54e3b5029f07891d320356",
+  "Raw": {
+    "client_Id": "external.microsoft",
+    "redirect_uri": "https://silumart.com",
+    "response_type": "code",
+    "scope": "api1"
+  }
+}
+2020-01-17 17:22:33.355 +08:00 [DBG] Client is configured to not require consent, no consent is required
+2020-01-17 17:22:33.360 +08:00 [DBG] Creating Authorization Code Flow response.
+2020-01-17 17:22:33.388 +08:00 [INF] Authorize endpoint response
+{
+  "SubjectId": "552739775971328",
+  "ClientId": "external.microsoft",
+  "RedirectUri": "https://silumart.com",
+  "Scope": "api1"
+}
+2020-01-17 17:22:43.554 +08:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2020-01-17 17:22:43.555 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2020-01-17 17:22:43.555 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2020-01-17 17:22:43.555 +08:00 [DBG] Start authorize callback request
+2020-01-17 17:22:43.555 +08:00 [DBG] User in authorize request: 552833829044224
+2020-01-17 17:22:43.555 +08:00 [DBG] Start authorize request protocol validation
+2020-01-17 17:22:43.556 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 17:22:43.556 +08:00 [DBG] Checking for PKCE parameters
+2020-01-17 17:22:43.556 +08:00 [DBG] No PKCE used.
+2020-01-17 17:22:43.556 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2020-01-17 17:22:43.556 +08:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "external.microsoft",
+  "ClientName": "Microsoft external login client for Code",
+  "RedirectUri": "https://silumart.com",
+  "AllowedRedirectUris": [
+    "https://silumart.com"
+  ],
+  "SubjectId": "552833829044224",
+  "ResponseType": "code",
+  "ResponseMode": "query",
+  "GrantType": "authorization_code",
+  "RequestedScopes": "api1",
+  "SessionId": "193ff895ecb7f8800aac60dfdb70390e",
+  "Raw": {
+    "client_Id": "external.microsoft",
+    "redirect_uri": "https://silumart.com",
+    "response_type": "code",
+    "scope": "api1"
+  }
+}
+2020-01-17 17:22:46.114 +08:00 [DBG] Client is configured to not require consent, no consent is required
+2020-01-17 17:22:46.114 +08:00 [DBG] Creating Authorization Code Flow response.
+2020-01-17 17:22:46.120 +08:00 [INF] Authorize endpoint response
+{
+  "SubjectId": "552833829044224",
+  "ClientId": "external.microsoft",
+  "RedirectUri": "https://silumart.com",
+  "Scope": "api1"
+}
+2020-01-17 17:23:02.378 +08:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2020-01-17 17:23:02.379 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2020-01-17 17:23:02.379 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2020-01-17 17:23:02.379 +08:00 [DBG] Start authorize callback request
+2020-01-17 17:23:02.379 +08:00 [DBG] No user present in authorize request
+2020-01-17 17:23:02.379 +08:00 [DBG] Start authorize request protocol validation
+2020-01-17 17:23:02.380 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 17:23:02.380 +08:00 [DBG] Checking for PKCE parameters
+2020-01-17 17:23:02.380 +08:00 [DBG] No PKCE used.
+2020-01-17 17:23:02.380 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2020-01-17 17:23:02.381 +08:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "external.microsoft",
+  "ClientName": "Microsoft external login client for Code",
+  "RedirectUri": "https://silumart.com",
+  "AllowedRedirectUris": [
+    "https://silumart.com"
+  ],
+  "SubjectId": "anonymous",
+  "ResponseType": "code",
+  "ResponseMode": "query",
+  "GrantType": "authorization_code",
+  "RequestedScopes": "api1",
+  "Raw": {
+    "client_Id": "external.microsoft",
+    "redirect_uri": "https://silumart.com",
+    "response_type": "code",
+    "scope": "api1"
+  }
+}
+2020-01-17 17:23:02.381 +08:00 [INF] Showing login: User is not authenticated
+2020-01-17 17:23:02.441 +08:00 [DBG] Start authorize request protocol validation
+2020-01-17 17:23:02.441 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 17:23:02.441 +08:00 [DBG] Checking for PKCE parameters
+2020-01-17 17:23:02.441 +08:00 [DBG] No PKCE used.
+2020-01-17 17:23:02.441 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2020-01-17 17:23:02.444 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 17:23:02.466 +08:00 [INF] AuthenticationScheme: Microsoft was challenged.
+2020-01-17 17:23:08.874 +08:00 [INF] Error from RemoteAuthentication: The operation was canceled..
+2020-01-17 17:23:08.886 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: An error was encountered while handling the remote login. ---> System.Threading.Tasks.TaskCanceledException: The operation was canceled. ---> System.IO.IOException: Unable to read data from the transport connection: 由于线程退出或应用程序请求，已中止 I/O 操作。. ---> System.Net.Sockets.SocketException: 由于线程退出或应用程序请求，已中止 I/O 操作。
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.GetResult(Int16 token)
+   at System.Net.Security.SslStreamInternal.<FillBufferAsync>g__InternalFillBufferAsync|38_0[TReadAdapter](TReadAdapter adap, ValueTask`1 task, Int32 min, Int32 initial)
+   at System.Net.Security.SslStreamInternal.ReadAsyncInternal[TReadAdapter](TReadAdapter adapter, Memory`1 buffer)
+   at System.Net.Http.HttpConnection.FillAsync()
+   at System.Net.Http.HttpConnection.ReadNextResponseHeaderLineAsync(Boolean foldedHeadersAllowed)
+   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithNtConnectionAuthAsync(HttpConnection connection, HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Microsoft.AspNetCore.Authentication.OAuth.OAuthHandler`1.ExchangeCodeAsync(String code, String redirectUri)
+   at Microsoft.AspNetCore.Authentication.OAuth.OAuthHandler`1.HandleRemoteAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
+   at IdentityServer4.Hosting.FederatedSignOut.AuthenticationRequestHandlerWrapper.HandleRequestAsync() in C:\local\identity\server4\IdentityServer4\src\IdentityServer4\Hosting\FederatedSignOut\AuthenticationRequestHandlerWrapper.cs:line 38
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.Invoke(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\IdentityServer4\Hosting\BaseUrlMiddleware.cs:line 36
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-01-17 17:23:14.448 +08:00 [INF] Error from RemoteAuthentication: The operation was canceled..
+2020-01-17 17:23:14.450 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: An error was encountered while handling the remote login. ---> System.Threading.Tasks.TaskCanceledException: The operation was canceled. ---> System.IO.IOException: Unable to read data from the transport connection: 由于线程退出或应用程序请求，已中止 I/O 操作。. ---> System.Net.Sockets.SocketException: 由于线程退出或应用程序请求，已中止 I/O 操作。
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.GetResult(Int16 token)
+   at System.Net.Security.SslStreamInternal.<FillBufferAsync>g__InternalFillBufferAsync|38_0[TReadAdapter](TReadAdapter adap, ValueTask`1 task, Int32 min, Int32 initial)
+   at System.Net.Security.SslStreamInternal.ReadAsyncInternal[TReadAdapter](TReadAdapter adapter, Memory`1 buffer)
+   at System.Net.Http.HttpConnection.FillAsync()
+   at System.Net.Http.HttpConnection.ReadNextResponseHeaderLineAsync(Boolean foldedHeadersAllowed)
+   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithNtConnectionAuthAsync(HttpConnection connection, HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Microsoft.AspNetCore.Authentication.OAuth.OAuthHandler`1.ExchangeCodeAsync(String code, String redirectUri)
+   at Microsoft.AspNetCore.Authentication.OAuth.OAuthHandler`1.HandleRemoteAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
+   at IdentityServer4.Hosting.FederatedSignOut.AuthenticationRequestHandlerWrapper.HandleRequestAsync() in C:\local\identity\server4\IdentityServer4\src\IdentityServer4\Hosting\FederatedSignOut\AuthenticationRequestHandlerWrapper.cs:line 38
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.Invoke(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\IdentityServer4\Hosting\BaseUrlMiddleware.cs:line 36
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-01-17 17:23:19.691 +08:00 [INF] AuthenticationScheme: idsrv.external signed in.
+2020-01-17 17:23:24.603 +08:00 [DBG] Augmenting SignInContext
+2020-01-17 17:23:24.605 +08:00 [DBG] Adding amr claim with value: external
+2020-01-17 17:23:24.608 +08:00 [INF] AuthenticationScheme: Application signed in.
+2020-01-17 17:23:24.613 +08:00 [INF] AuthenticationScheme: idsrv.external signed out.
+2020-01-17 17:23:24.613 +08:00 [DBG] Start authorize request protocol validation
+2020-01-17 17:23:24.613 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 17:23:24.613 +08:00 [DBG] Checking for PKCE parameters
+2020-01-17 17:23:24.613 +08:00 [DBG] No PKCE used.
+2020-01-17 17:23:24.614 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2020-01-17 17:23:24.614 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 17:23:24.623 +08:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2020-01-17 17:23:24.623 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2020-01-17 17:23:24.623 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2020-01-17 17:23:24.623 +08:00 [DBG] Start authorize callback request
+2020-01-17 17:23:24.623 +08:00 [DBG] User in authorize request: 552846244184064
+2020-01-17 17:23:24.623 +08:00 [DBG] Start authorize request protocol validation
+2020-01-17 17:23:24.623 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 17:23:24.623 +08:00 [DBG] Checking for PKCE parameters
+2020-01-17 17:23:24.623 +08:00 [DBG] No PKCE used.
+2020-01-17 17:23:24.623 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2020-01-17 17:23:24.623 +08:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "external.microsoft",
+  "ClientName": "Microsoft external login client for Code",
+  "RedirectUri": "https://silumart.com",
+  "AllowedRedirectUris": [
+    "https://silumart.com"
+  ],
+  "SubjectId": "552846244184064",
+  "ResponseType": "code",
+  "ResponseMode": "query",
+  "GrantType": "authorization_code",
+  "RequestedScopes": "api1",
+  "SessionId": "426f7cc6b6ea1a149287ec99545d45a2",
+  "Raw": {
+    "client_Id": "external.microsoft",
+    "redirect_uri": "https://silumart.com",
+    "response_type": "code",
+    "scope": "api1"
+  }
+}
+2020-01-17 17:23:32.344 +08:00 [DBG] Client is configured to not require consent, no consent is required
+2020-01-17 17:23:32.344 +08:00 [DBG] Creating Authorization Code Flow response.
+2020-01-17 17:23:32.360 +08:00 [INF] Authorize endpoint response
+{
+  "SubjectId": "552846244184064",
+  "ClientId": "external.microsoft",
+  "RedirectUri": "https://silumart.com",
+  "Scope": "api1"
+}
+2020-01-17 17:23:32.365 +08:00 [DBG] Augmenting SignInContext
+2020-01-17 17:23:32.365 +08:00 [INF] AuthenticationScheme: Application signed in.
+2020-01-17 17:24:44.344 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2020-01-17 17:24:44.347 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2020-01-17 17:24:44.347 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2020-01-17 17:24:44.353 +08:00 [DBG] Start discovery request
+2020-01-17 17:24:44.451 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2020-01-17 17:24:44.452 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2020-01-17 17:24:44.452 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2020-01-17 17:24:44.457 +08:00 [DBG] Start key discovery request
+2020-01-17 17:24:51.111 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2020-01-17 17:24:51.137 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2020-01-17 17:24:51.137 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2020-01-17 17:24:51.146 +08:00 [DBG] Start token request.
+2020-01-17 17:24:51.152 +08:00 [DBG] Start client validation
+2020-01-17 17:24:51.158 +08:00 [DBG] Start parsing Basic Authentication secret
+2020-01-17 17:24:51.161 +08:00 [DBG] Start parsing for secret in post body
+2020-01-17 17:24:51.174 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2020-01-17 17:24:51.175 +08:00 [DBG] Secret id found: external.microsoft
+2020-01-17 17:24:51.175 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 17:24:51.182 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2020-01-17 17:24:51.183 +08:00 [DBG] Client validation success
+2020-01-17 17:24:51.187 +08:00 [DBG] Start token request validation
+2020-01-17 17:24:51.197 +08:00 [DBG] Start validation of authorization code token request
+2020-01-17 17:25:00.610 +08:00 [DBG] Validation of authorization code token request success
+2020-01-17 17:25:00.614 +08:00 [INF] Token request validation success
+{
+  "ClientId": "external.microsoft",
+  "ClientName": "Microsoft external login client for Code",
+  "GrantType": "authorization_code",
+  "AuthorizationCode": "c2604ffb1eb4166c3b9da8ddfd12b61b095308db3b14e0dec3d4301c3b7f3039",
+  "Raw": {
+    "grant_type": "authorization_code",
+    "code": "c2604ffb1eb4166c3b9da8ddfd12b61b095308db3b14e0dec3d4301c3b7f3039",
+    "redirect_uri": "https://silumart.com",
+    "client_id": "external.microsoft",
+    "client_secret": "***REDACTED***"
+  }
+}
+2020-01-17 17:25:00.626 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 17:25:00.635 +08:00 [DBG] Getting claims for access token for client: external.microsoft
+2020-01-17 17:25:00.636 +08:00 [DBG] Getting claims for access token for subject: 552846244184064
+2020-01-17 17:27:25.287 +08:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2020-01-17 17:27:25.332 +08:00 [DBG] Using Application as default scheme for authentication
+2020-01-17 17:27:25.335 +08:00 [DBG] Using External as default scheme for sign-in
+2020-01-17 17:27:25.335 +08:00 [DBG] Using External as default scheme for sign-out
+2020-01-17 17:27:25.335 +08:00 [DBG] Using Application as default scheme for challenge
+2020-01-17 17:27:25.335 +08:00 [DBG] Using Application as default scheme for forbid
+2020-01-17 17:27:31.932 +08:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2020-01-17 17:27:31.992 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2020-01-17 17:27:31.993 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2020-01-17 17:27:31.998 +08:00 [DBG] Start authorize callback request
+2020-01-17 17:27:32.009 +08:00 [DBG] User in authorize request: 552739775971328
+2020-01-17 17:27:32.013 +08:00 [DBG] Start authorize request protocol validation
+2020-01-17 17:27:32.023 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 17:27:32.027 +08:00 [DBG] Checking for PKCE parameters
+2020-01-17 17:27:32.028 +08:00 [DBG] No PKCE used.
+2020-01-17 17:27:32.064 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2020-01-17 17:27:32.077 +08:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "external.microsoft",
+  "ClientName": "Microsoft external login client for Code",
+  "RedirectUri": "https://silumart.com",
+  "AllowedRedirectUris": [
+    "https://silumart.com"
+  ],
+  "SubjectId": "552739775971328",
+  "ResponseType": "code",
+  "ResponseMode": "query",
+  "GrantType": "authorization_code",
+  "RequestedScopes": "api1",
+  "SessionId": "73e6186c6c54e3b5029f07891d320356",
+  "Raw": {
+    "client_Id": "external.microsoft",
+    "redirect_uri": "https://silumart.com",
+    "response_type": "code",
+    "scope": "api1"
+  }
+}
+2020-01-17 17:27:35.751 +08:00 [DBG] Client is configured to not require consent, no consent is required
+2020-01-17 17:27:35.755 +08:00 [DBG] Creating Authorization Code Flow response.
+2020-01-17 17:27:35.786 +08:00 [INF] Authorize endpoint response
+{
+  "SubjectId": "552739775971328",
+  "ClientId": "external.microsoft",
+  "RedirectUri": "https://silumart.com",
+  "Scope": "api1"
+}
+2020-01-17 17:27:55.217 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2020-01-17 17:27:55.220 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2020-01-17 17:27:55.220 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2020-01-17 17:27:55.225 +08:00 [DBG] Start discovery request
+2020-01-17 17:27:55.329 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2020-01-17 17:27:55.330 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2020-01-17 17:27:55.330 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2020-01-17 17:27:55.335 +08:00 [DBG] Start key discovery request
+2020-01-17 17:27:59.126 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2020-01-17 17:27:59.132 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2020-01-17 17:27:59.132 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2020-01-17 17:27:59.139 +08:00 [DBG] Start token request.
+2020-01-17 17:27:59.145 +08:00 [DBG] Start client validation
+2020-01-17 17:27:59.151 +08:00 [DBG] Start parsing Basic Authentication secret
+2020-01-17 17:27:59.154 +08:00 [DBG] Start parsing for secret in post body
+2020-01-17 17:27:59.168 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2020-01-17 17:27:59.169 +08:00 [DBG] Secret id found: external.microsoft
+2020-01-17 17:27:59.169 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 17:27:59.177 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2020-01-17 17:27:59.177 +08:00 [DBG] Client validation success
+2020-01-17 17:27:59.184 +08:00 [DBG] Start token request validation
+2020-01-17 17:27:59.193 +08:00 [DBG] Start validation of authorization code token request
+2020-01-17 17:27:59.200 +08:00 [DBG] authorization_code grant with value: c2604ffb1eb4166c3b9da8ddfd12b61b095308db3b14e0dec3d4301c3b7f3039 not found in store.
+2020-01-17 17:27:59.201 +08:00 [ERR] Invalid authorization code: c2604ffb1eb4166c3b9da8ddfd12b61b095308db3b14e0dec3d4301c3b7f3039
+2020-01-17 17:27:59.205 +08:00 [ERR] {
+  "ClientId": "external.microsoft",
+  "ClientName": "Microsoft external login client for Code",
+  "GrantType": "authorization_code",
+  "AuthorizationCode": "c2604ffb1eb4166c3b9da8ddfd12b61b095308db3b14e0dec3d4301c3b7f3039",
+  "Raw": {
+    "grant_type": "authorization_code",
+    "code": "c2604ffb1eb4166c3b9da8ddfd12b61b095308db3b14e0dec3d4301c3b7f3039",
+    "redirect_uri": "https://silumart.com",
+    "client_id": "external.microsoft",
+    "client_secret": "***REDACTED***"
+  }
+}
+2020-01-17 17:28:31.241 +08:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2020-01-17 17:28:31.243 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2020-01-17 17:28:31.248 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2020-01-17 17:28:31.248 +08:00 [DBG] Start authorize callback request
+2020-01-17 17:28:31.248 +08:00 [DBG] No user present in authorize request
+2020-01-17 17:28:31.248 +08:00 [DBG] Start authorize request protocol validation
+2020-01-17 17:28:31.249 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 17:28:31.249 +08:00 [DBG] Checking for PKCE parameters
+2020-01-17 17:28:31.249 +08:00 [DBG] No PKCE used.
+2020-01-17 17:28:31.250 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2020-01-17 17:28:31.250 +08:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "external.microsoft",
+  "ClientName": "Microsoft external login client for Code",
+  "RedirectUri": "https://silumart.com",
+  "AllowedRedirectUris": [
+    "https://silumart.com"
+  ],
+  "SubjectId": "anonymous",
+  "ResponseType": "code",
+  "ResponseMode": "query",
+  "GrantType": "authorization_code",
+  "RequestedScopes": "api1",
+  "Raw": {
+    "client_Id": "external.microsoft",
+    "redirect_uri": "https://silumart.com",
+    "response_type": "code",
+    "scope": "api1"
+  }
+}
+2020-01-17 17:28:31.250 +08:00 [INF] Showing login: User is not authenticated
+2020-01-17 17:28:31.356 +08:00 [DBG] Start authorize request protocol validation
+2020-01-17 17:28:31.356 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 17:28:31.356 +08:00 [DBG] Checking for PKCE parameters
+2020-01-17 17:28:31.356 +08:00 [DBG] No PKCE used.
+2020-01-17 17:28:31.356 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2020-01-17 17:28:31.358 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 17:28:31.383 +08:00 [INF] AuthenticationScheme: Microsoft was challenged.
+2020-01-17 17:28:41.397 +08:00 [INF] AuthenticationScheme: idsrv.external signed in.
+2020-01-17 17:28:44.233 +08:00 [DBG] Augmenting SignInContext
+2020-01-17 17:28:44.236 +08:00 [DBG] Adding amr claim with value: external
+2020-01-17 17:28:44.239 +08:00 [INF] AuthenticationScheme: Application signed in.
+2020-01-17 17:28:44.248 +08:00 [INF] AuthenticationScheme: idsrv.external signed out.
+2020-01-17 17:28:44.248 +08:00 [DBG] Start authorize request protocol validation
+2020-01-17 17:28:44.248 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 17:28:44.249 +08:00 [DBG] Checking for PKCE parameters
+2020-01-17 17:28:44.249 +08:00 [DBG] No PKCE used.
+2020-01-17 17:28:44.249 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2020-01-17 17:28:44.250 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 17:28:44.254 +08:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2020-01-17 17:28:44.255 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2020-01-17 17:28:44.255 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2020-01-17 17:28:44.255 +08:00 [DBG] Start authorize callback request
+2020-01-17 17:28:44.255 +08:00 [DBG] User in authorize request: 552851596115968
+2020-01-17 17:28:44.255 +08:00 [DBG] Start authorize request protocol validation
+2020-01-17 17:28:44.255 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 17:28:44.255 +08:00 [DBG] Checking for PKCE parameters
+2020-01-17 17:28:44.255 +08:00 [DBG] No PKCE used.
+2020-01-17 17:28:44.255 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2020-01-17 17:28:44.255 +08:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "external.microsoft",
+  "ClientName": "Microsoft external login client for Code",
+  "RedirectUri": "https://silumart.com",
+  "AllowedRedirectUris": [
+    "https://silumart.com"
+  ],
+  "SubjectId": "552851596115968",
+  "ResponseType": "code",
+  "ResponseMode": "query",
+  "GrantType": "authorization_code",
+  "RequestedScopes": "api1",
+  "SessionId": "6bfdc6944801cd81a077a55e1bbaba91",
+  "Raw": {
+    "client_Id": "external.microsoft",
+    "redirect_uri": "https://silumart.com",
+    "response_type": "code",
+    "scope": "api1"
+  }
+}
+2020-01-17 17:28:45.237 +08:00 [DBG] Client is configured to not require consent, no consent is required
+2020-01-17 17:28:45.237 +08:00 [DBG] Creating Authorization Code Flow response.
+2020-01-17 17:28:45.244 +08:00 [INF] Authorize endpoint response
+{
+  "SubjectId": "552851596115968",
+  "ClientId": "external.microsoft",
+  "RedirectUri": "https://silumart.com",
+  "Scope": "api1"
+}
+2020-01-17 17:28:45.249 +08:00 [DBG] Augmenting SignInContext
+2020-01-17 17:28:45.250 +08:00 [INF] AuthenticationScheme: Application signed in.
+2020-01-17 17:29:43.029 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2020-01-17 17:29:43.030 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2020-01-17 17:29:43.030 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2020-01-17 17:29:43.030 +08:00 [DBG] Start discovery request
+2020-01-17 17:29:43.103 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2020-01-17 17:29:43.103 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2020-01-17 17:29:43.103 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2020-01-17 17:29:43.103 +08:00 [DBG] Start key discovery request
+2020-01-17 17:29:47.899 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2020-01-17 17:29:47.904 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2020-01-17 17:29:47.904 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2020-01-17 17:29:47.905 +08:00 [DBG] Start token request.
+2020-01-17 17:29:47.905 +08:00 [DBG] Start client validation
+2020-01-17 17:29:47.905 +08:00 [DBG] Start parsing Basic Authentication secret
+2020-01-17 17:29:47.905 +08:00 [DBG] Start parsing for secret in post body
+2020-01-17 17:29:47.905 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2020-01-17 17:29:47.905 +08:00 [DBG] Secret id found: external.microsoft
+2020-01-17 17:29:47.905 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 17:29:47.905 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2020-01-17 17:29:47.905 +08:00 [DBG] Client validation success
+2020-01-17 17:29:47.905 +08:00 [DBG] Start token request validation
+2020-01-17 17:29:47.905 +08:00 [DBG] Start validation of authorization code token request
+2020-01-17 17:29:51.420 +08:00 [DBG] Validation of authorization code token request success
+2020-01-17 17:29:51.421 +08:00 [INF] Token request validation success
+{
+  "ClientId": "external.microsoft",
+  "ClientName": "Microsoft external login client for Code",
+  "GrantType": "authorization_code",
+  "AuthorizationCode": "ae3680b9c3119b2108e6e02a7e5a4b29d41f106d5d6350dd7172748f4d1819ec",
+  "Raw": {
+    "grant_type": "authorization_code",
+    "code": "ae3680b9c3119b2108e6e02a7e5a4b29d41f106d5d6350dd7172748f4d1819ec",
+    "redirect_uri": "https://silumart.com",
+    "client_id": "external.microsoft",
+    "client_secret": "***REDACTED***"
+  }
+}
+2020-01-17 17:29:51.439 +08:00 [DBG] client configuration validation for client external.microsoft succeeded.
+2020-01-17 17:29:51.452 +08:00 [DBG] Getting claims for access token for client: external.microsoft
+2020-01-17 17:29:51.453 +08:00 [DBG] Getting claims for access token for subject: 552739775971328
+2020-01-17 17:30:07.194 +08:00 [DBG] Token request success.
+2020-01-17 17:30:16.088 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2020-01-17 17:30:16.089 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2020-01-17 17:30:16.089 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2020-01-17 17:30:16.089 +08:00 [DBG] Start discovery request
+2020-01-17 17:30:16.164 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2020-01-17 17:30:16.164 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2020-01-17 17:30:16.164 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2020-01-17 17:30:16.164 +08:00 [DBG] Start key discovery request
+2020-01-17 17:39:50.849 +08:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2020-01-17 17:39:50.888 +08:00 [DBG] Using Application as default scheme for authentication
+2020-01-17 17:39:50.891 +08:00 [DBG] Using External as default scheme for sign-in
+2020-01-17 17:39:50.891 +08:00 [DBG] Using External as default scheme for sign-out
+2020-01-17 17:39:50.891 +08:00 [DBG] Using Application as default scheme for challenge
+2020-01-17 17:39:50.891 +08:00 [DBG] Using Application as default scheme for forbid
+2020-01-17 17:39:55.711 +08:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2020-01-17 17:39:55.831 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2020-01-17 17:39:55.831 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2020-01-17 17:39:55.836 +08:00 [DBG] Start authorize callback request
+2020-01-17 17:39:55.848 +08:00 [DBG] User in authorize request: 552739775971328
+2020-01-17 17:39:55.852 +08:00 [DBG] Start authorize request protocol validation
+2020-01-17 17:39:55.863 +08:00 [DBG] client configuration validation for client external.weibo succeeded.
+2020-01-17 17:39:55.868 +08:00 [DBG] Checking for PKCE parameters
+2020-01-17 17:39:55.869 +08:00 [DBG] No PKCE used.
+2020-01-17 17:39:55.907 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2020-01-17 17:39:55.923 +08:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "external.weibo",
+  "ClientName": "weibo external login client",
+  "RedirectUri": "http://a.com/login",
+  "AllowedRedirectUris": [
+    "http://a.com/login"
+  ],
+  "SubjectId": "552739775971328",
+  "ResponseType": "code",
+  "ResponseMode": "query",
+  "GrantType": "authorization_code",
+  "RequestedScopes": "api1",
+  "SessionId": "73e6186c6c54e3b5029f07891d320356",
+  "Raw": {
+    "client_Id": "external.weibo",
+    "redirect_uri": "http://a.com/login",
+    "response_type": "code",
+    "scope": "api1"
+  }
+}
+2020-01-17 17:40:02.377 +08:00 [INF] Showing login: User is logged in with idp: Microsoft, but idp not in client restriction list.
+2020-01-17 17:40:02.450 +08:00 [DBG] Start authorize request protocol validation
+2020-01-17 17:40:02.450 +08:00 [DBG] client configuration validation for client external.weibo succeeded.
+2020-01-17 17:40:02.451 +08:00 [DBG] Checking for PKCE parameters
+2020-01-17 17:40:02.451 +08:00 [DBG] No PKCE used.
+2020-01-17 17:40:02.451 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2020-01-17 17:40:02.453 +08:00 [DBG] client configuration validation for client external.weibo succeeded.
+2020-01-17 17:40:02.478 +08:00 [INF] AuthenticationScheme: Weibo was challenged.
+2020-01-17 17:44:39.572 +08:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2020-01-17 17:44:39.605 +08:00 [DBG] Using Application as default scheme for authentication
+2020-01-17 17:44:39.608 +08:00 [DBG] Using External as default scheme for sign-in
+2020-01-17 17:44:39.609 +08:00 [DBG] Using External as default scheme for sign-out
+2020-01-17 17:44:39.609 +08:00 [DBG] Using Application as default scheme for challenge
+2020-01-17 17:44:39.609 +08:00 [DBG] Using Application as default scheme for forbid
+2020-01-17 17:45:54.535 +08:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2020-01-17 17:45:54.587 +08:00 [DBG] Using Application as default scheme for authentication
+2020-01-17 17:45:54.590 +08:00 [DBG] Using External as default scheme for sign-in
+2020-01-17 17:45:54.590 +08:00 [DBG] Using External as default scheme for sign-out
+2020-01-17 17:45:54.590 +08:00 [DBG] Using Application as default scheme for challenge
+2020-01-17 17:45:54.590 +08:00 [DBG] Using Application as default scheme for forbid
+2020-01-17 17:51:28.052 +08:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2020-01-17 17:51:28.164 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2020-01-17 17:51:28.165 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2020-01-17 17:51:28.170 +08:00 [DBG] Start authorize callback request
+2020-01-17 17:51:28.183 +08:00 [DBG] User in authorize request: 552739775971328
+2020-01-17 17:51:28.187 +08:00 [DBG] Start authorize request protocol validation
+2020-01-17 17:51:28.198 +08:00 [DBG] client configuration validation for client external.weibo succeeded.
+2020-01-17 17:51:28.214 +08:00 [ERR] Invalid redirect_uri: http://a.com/login
+{
+  "ClientId": "external.weibo",
+  "ClientName": "weibo external login client",
+  "AllowedRedirectUris": [
+    "https://silumart.com"
+  ],
+  "SubjectId": "552739775971328",
+  "RequestedScopes": "",
+  "Raw": {
+    "client_Id": "external.weibo",
+    "redirect_uri": "http://a.com/login",
+    "response_type": "code",
+    "scope": "api1"
+  }
+}
+2020-01-17 17:51:28.217 +08:00 [ERR] Request validation failed
+2020-01-17 17:51:28.217 +08:00 [INF] {
+  "ClientId": "external.weibo",
+  "ClientName": "weibo external login client",
+  "AllowedRedirectUris": [
+    "https://silumart.com"
+  ],
+  "SubjectId": "552739775971328",
+  "RequestedScopes": "",
+  "Raw": {
+    "client_Id": "external.weibo",
+    "redirect_uri": "http://a.com/login",
+    "response_type": "code",
+    "scope": "api1"
+  }
+}
