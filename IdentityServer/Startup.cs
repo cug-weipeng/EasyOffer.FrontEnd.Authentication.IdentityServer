@@ -42,7 +42,7 @@ namespace IdentityServer
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
-            var builder = services.AddIdentityServer(option=> 
+            var builder = services.AddIdentityServer(option =>
             {
                 //option.UserInteraction.LoginUrl("api/")
             })
@@ -53,8 +53,8 @@ namespace IdentityServer
                 //.AddCustomTokenRequestValidator<TokenRequestValidator>()
                 //.AddResourceOwnerValidator<ResourceOwnerPasswordValidator>()
                 //.AddCustomAuthorizeRequestValidator<AuthorizeRequestValidator>()
-                ;  
-                //.AddTestUsers(Config.GetUsers());
+                ;
+            //.AddTestUsers(Config.GetUsers());
 
             if (Environment.IsDevelopment())
             {
@@ -67,43 +67,63 @@ namespace IdentityServer
 
             //JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
 
-            services.AddAuthentication(o =>
-            {
-                o.DefaultScheme = "Application";
-                o.DefaultSignInScheme = "External";
-            })
-            .AddCookie("Application")
-            .AddCookie("External")
-            .AddMicrosoftAccount("Microsoft", options =>
-            {
+            //services.AddAuthentication(o =>
+            //{
+            //    o.DefaultScheme = "Application";
+            //    o.DefaultSignInScheme = "External";
+            //})
+            //.AddCookie("Application")
+            //.AddCookie("External")
+            services.AddAuthentication()
+           .AddMicrosoftAccount("Microsoft", options =>
+           {
                 //options.SignInScheme = JwtBearerDefaults.AuthenticationScheme; ;
                 options.SignInScheme = IdentityServerConstants.ExternalCookieAuthenticationScheme;
-                options.ClientId = "c5dd363e-57c8-46a3-93fe-854ddf06970f";
-                options.ClientSecret = "R?N-xKAi56:bj4M1tO_PJ7Qyd[WENmOg";
-                options.CallbackPath = "/account/callback";
+               options.ClientId = "c5dd363e-57c8-46a3-93fe-854ddf06970f";
+               options.ClientSecret = "R?N-xKAi56:bj4M1tO_PJ7Qyd[WENmOg";
+               options.CallbackPath = "/account/callback";
+           })
+           .AddWeibo("Weibo", options =>
+           {
+               options.SignInScheme = IdentityServerConstants.ExternalCookieAuthenticationScheme;
+               options.ClientId = "430309827";
+               options.ClientSecret = "6c8af89f99ffee9ea59433c248e206c3";
+               //options.CallbackPath = "/login";
+           })
+           .AddFacebook("Facebook", options =>
+           {
+               options.SignInScheme = IdentityServerConstants.ExternalCookieAuthenticationScheme;
+               options.ClientId = "2576758835891717";
+               options.ClientSecret = "b494862fe42c011ee50d62cb07f6938a";
+              // options.CallbackPath = "/account/callback";
+                // TestUser 113897956814361 fxpfhruykc_1578621243@tfbnw.net Test@1234
             })
-            .AddWeibo("Weibo", options =>
-            {
-                options.SignInScheme = IdentityServerConstants.ExternalCookieAuthenticationScheme;
-                options.ClientId = "430309827";
-                options.ClientSecret = "6c8af89f99ffee9ea59433c248e206c3";
-                options.CallbackPath = "/login";
-            })
-            .AddOpenIdConnect("oidc", "OpenID Connect", options =>
-            {
-                options.SignInScheme = IdentityServerConstants.ExternalCookieAuthenticationScheme;
-                options.SignOutScheme = IdentityServerConstants.SignoutScheme;
-                options.SaveTokens = true;
+           .AddGoogle("Google", options =>
+           {
+               options.SignInScheme = IdentityServerConstants.ExternalCookieAuthenticationScheme;
 
-                options.Authority = "https://demo.identityserver.io/";
-                options.ClientId = "implicit";
+               options.ClientId = "296751627088-0irjnelnrr84afg5n523uu3ag2mhjlgu.apps.googleusercontent.com";
+               options.ClientSecret = "EmLniXtdeLskcBXqMkKN8aK_";
+           })
+           .AddOpenIdConnect("oidc", "OpenID Connect", options =>
+           {
+               options.SignInScheme = IdentityServerConstants.ExternalCookieAuthenticationScheme;
+               options.SignOutScheme = IdentityServerConstants.SignoutScheme;
+               options.SaveTokens = true;
 
-                options.TokenValidationParameters = new TokenValidationParameters
-                {
-                    NameClaimType = "name",
-                    RoleClaimType = "role"
-                };
-            });
+               options.Authority = "https://demo.identityserver.io/";
+               options.ClientId = "implicit";
+
+               options.TokenValidationParameters = new TokenValidationParameters
+               {
+                   NameClaimType = "name",
+                   RoleClaimType = "role"
+               };
+           });
+
+
+            services.AddCors(options => options.AddPolicy("CorsUrl", p => p.WithOrigins("*").AllowAnyMethod().WithExposedHeaders("Location").AllowAnyHeader()));
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -120,11 +140,12 @@ namespace IdentityServer
                 app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
+          //  app.UseHttpsRedirection();
             app.UseStaticFiles();
-            app.UseCookiePolicy();
+         //   app.UseCookiePolicy();
 
             app.UseIdentityServer();
+            app.UseCors("CorsUrl"); 
             app.UseMvcWithDefaultRoute();
         }
     }

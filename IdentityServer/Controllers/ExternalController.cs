@@ -24,29 +24,25 @@ using Microsoft.Extensions.Configuration;
 
 namespace EasyOffer.FrontEnd.Authentication.IdentityServer.Controllers
 {
+    [SecurityHeaders]
     [AllowAnonymous]
     public class ExternalController : Controller
     {
+        private const string DEFAULT_USER_PASSWORD = "888888";
 
         private readonly TestUserStore _users;
         private readonly IIdentityServerInteractionService _interaction;
         private readonly IClientStore _clientStore;
-        private readonly IAuthenticationSchemeProvider _schemeProvider;
         private readonly IEventService _events;
         private readonly IConfiguration _configuration;
-        private readonly IAuthorizeResponseGenerator _authorizeResponseGenerator;
-        private readonly ITokenService _tokenService;
 
         private UserRepo _userRepo;
 
         public ExternalController(
           IIdentityServerInteractionService interaction,
           IClientStore clientStore,
-          IAuthenticationSchemeProvider schemeProvider,
           IEventService events,
           IConfiguration configuration,
-          IAuthorizeResponseGenerator authorizeResponseGenerator,
-          ITokenService tokenService,
           TestUserStore users = null)
         {
             // if the TestUserStore is not in DI, then we'll just use the global users collection
@@ -55,11 +51,8 @@ namespace EasyOffer.FrontEnd.Authentication.IdentityServer.Controllers
 
             _interaction = interaction;
             _clientStore = clientStore;
-            _schemeProvider = schemeProvider;
             _events = events;
             _configuration = configuration;
-            _authorizeResponseGenerator = authorizeResponseGenerator;
-            _tokenService = tokenService;
 
             _userRepo = new UserRepo();
         }
@@ -103,7 +96,6 @@ namespace EasyOffer.FrontEnd.Authentication.IdentityServer.Controllers
         /// <summary>
         /// Post processing of external authentication
         /// </summary>
-        [HttpGet("callback")]
         public async Task<IActionResult> Callback()
         {
             // read external identity from the temporary cookie
@@ -133,7 +125,7 @@ namespace EasyOffer.FrontEnd.Authentication.IdentityServer.Controllers
             ProcessLoginCallbackForSaml2p(result, additionalLocalClaims, localSignInProps);
 
 
-            // issue authentication cookie for user
+            // issue authentication cookie for userok
             await _events.RaiseAsync(new UserLoginSuccessEvent(provider, providerUserId, user.UserId.ToString(), user.FullName));
             await HttpContext.SignInAsync(user.UserId.ToString(), user.FirstName, provider, localSignInProps, additionalLocalClaims.ToArray());
 
@@ -232,14 +224,16 @@ namespace EasyOffer.FrontEnd.Authentication.IdentityServer.Controllers
         private UserEntity AutoProvisionUser(string provider, string providerUserId, IEnumerable<Claim> claims)
         {
             var userId = new IdGenerationSvc(_configuration).GenerateId();
+            var email = GetClaimValue(claims, JwtClaimTypes.Email) ;
+            var fullName = GetClaimValue(claims, JwtClaimTypes.Name) ?? GetClaimValue(claims, ClaimTypes.Name);
             var user = new UserEntity
             {
                 UserId = userId,
-                Email = GetClaimValue(claims, JwtClaimTypes.Email) ?? GetClaimValue(claims, ClaimTypes.Email),
-                FullName = GetClaimValue(claims, JwtClaimTypes.Name) ?? GetClaimValue(claims, ClaimTypes.Name),
+                Email = email ?? fullName ?? providerUserId,
+                FullName = fullName,
                 FirstName = GetClaimValue(claims, JwtClaimTypes.GivenName) ?? GetClaimValue(claims, ClaimTypes.GivenName),
                 LastName = GetClaimValue(claims, JwtClaimTypes.FamilyName) ?? GetClaimValue(claims, ClaimTypes.Surname),
-                Password = GetClaimValue(claims, JwtClaimTypes.Email) ?? GetClaimValue(claims, ClaimTypes.Email),
+                Password = DEFAULT_USER_PASSWORD,
                 Avatar = GetClaimValue(claims, JwtClaimTypes.Picture) ?? GetClaimValue(claims, ClaimTypes.Webpage) ?? "none", // TODO: 用户头像
                 IPAddress = GetUserIP(),
                 Integrals = 0,
@@ -314,7 +308,7 @@ namespace EasyOffer.FrontEnd.Authentication.IdentityServer.Controllers
 
         public static Claim[] GetUserClaims(UserEntity user)
         {
-            if(user == null)
+            if (user == null)
             {
                 return new Claim[] { };
             }

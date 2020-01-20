@@ -24,6 +24,7 @@ using Microsoft.Extensions.Configuration;
 namespace EasyOffer.FrontEnd.Authentication.IdentityServer.Controllers
 {
     //[ApiController]
+    [SecurityHeaders]
     [AllowAnonymous]
     public class AccountController : Controller
     {
@@ -33,8 +34,6 @@ namespace EasyOffer.FrontEnd.Authentication.IdentityServer.Controllers
         private readonly IAuthenticationSchemeProvider _schemeProvider;
         private readonly IEventService _events;
         private readonly IConfiguration _configuration;
-        private readonly IAuthorizeResponseGenerator _authorizeResponseGenerator;
-        private readonly ITokenService _tokenService;
 
         private UserRepo _userRepo;
 
@@ -44,8 +43,6 @@ namespace EasyOffer.FrontEnd.Authentication.IdentityServer.Controllers
           IAuthenticationSchemeProvider schemeProvider,
           IEventService events,
           IConfiguration configuration,
-          IAuthorizeResponseGenerator authorizeResponseGenerator,
-          ITokenService tokenService,
           TestUserStore users = null)
         {
             // if the TestUserStore is not in DI, then we'll just use the global users collection
@@ -57,8 +54,6 @@ namespace EasyOffer.FrontEnd.Authentication.IdentityServer.Controllers
             _schemeProvider = schemeProvider;
             _events = events;
             _configuration = configuration;
-            _authorizeResponseGenerator = authorizeResponseGenerator;
-            _tokenService = tokenService;
 
             _userRepo = new UserRepo();
         }
@@ -71,7 +66,6 @@ namespace EasyOffer.FrontEnd.Authentication.IdentityServer.Controllers
         /// <summary>
         /// Entry point into the login workflow
         /// </summary>
-        [HttpGet]
         public async Task<IActionResult> Login(string returnUrl)
         {
             // build a model so we know what to show on the login page
@@ -85,8 +79,13 @@ namespace EasyOffer.FrontEnd.Authentication.IdentityServer.Controllers
 
             return View(vm);
         }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Login(LoginInputModel model, string button)
+        {
+            throw new NotImplementedException();
+        }
 
-     
         private async Task<LoginViewModel> BuildLoginViewModelAsync(string returnUrl)
         {
             var context = await _interaction.GetAuthorizationContextAsync(returnUrl);

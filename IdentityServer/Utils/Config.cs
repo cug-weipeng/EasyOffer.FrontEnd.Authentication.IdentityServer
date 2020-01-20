@@ -170,6 +170,42 @@ namespace IdentityServer
                     //允许登录后重定向的地址列表，可以有多个
                     RedirectUris = {"https://silumart.com"},
                     AllowedScopes = { "api1" }
+               },
+                new Client()
+               {//微软客户端
+                    ClientId="external.facebook",
+                    ClientName="facebook external login client",
+                    //客户端密码
+                     ClientSecrets =
+                    {
+                        new Secret("secret".Sha256())
+                    },
+                    AllowedGrantTypes=GrantTypes.Code,
+                    EnableLocalLogin = false,
+                    RequireConsent= false,
+                    IdentityProviderRestrictions = new List<string>(){ "Facebook"},
+                    //允许登录后重定向的地址列表，可以有多个
+                    //允许登录后重定向的地址列表，可以有多个
+                    RedirectUris = {"https://silumart.com"},
+                    AllowedScopes = { "api1" }
+               },
+                new Client()
+               {//微软客户端
+                    ClientId="external.google",
+                    ClientName="Google external login client",
+                    //客户端密码
+                     ClientSecrets =
+                    {
+                        new Secret("secret".Sha256())
+                    },
+                    AllowedGrantTypes=GrantTypes.Code,
+                    EnableLocalLogin = false,
+                    RequireConsent= false,
+                    IdentityProviderRestrictions = new List<string>(){ "Google"},
+                    //允许登录后重定向的地址列表，可以有多个
+                    //允许登录后重定向的地址列表，可以有多个
+                    RedirectUris = {"https://silumart.com"},
+                    AllowedScopes = { "api1" }
                }
             };
         }
